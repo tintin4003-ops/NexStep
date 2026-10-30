@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="mntr_dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link " href="mntr_dashboard.html">Dashboard</a>
+            <a class="link" href="mntr_workshop.html">Host Workshop</a>
+            <a class="link" href="mntr_material.html">Upload Material</a>
+            <a class="link" href="mntr_job.html">Internship/Job</a>
+            <a class="link" href="mntr_tip.html">Career Tips</a>
+            <a class="link current" href="mntr_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <div class="container">
+
+            <div class="page-title">
+                <h1>My Profile</h1>
+                <a class="btn btn-outline" href="student_CngPass.html">Change Password</a>
+            </div>
+
+            <div class="card form-box">
+                <h2>View / Edit Profile</h2>
+                <form action="#" method="get">
+                    <table class="table">
+                <tr>
+                    <td class="labelC"><label for="name">Full name</label></td>
+                    <td><input type="text" id="name" name="name" value="Shafeen Ahmed"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" value="mentor@nexstep.com"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="univ">University / Organization</label></td>
+                    <td><input type="text" id="univ" name="univ" value="AIUB"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="loc">Location</label></td>
+                    <td><input type="text" id="loc" name="loc" value="Dhaka, Bangladesh"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="skills">Skills</label></td>
+                    <td><input type="text" id="skills" name="skills" value="PHP, JavaScript, MySQL"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="web">Website / LinkedIn</label></td>
+                    <td><input type="url" id="web" name="web" placeholder="https://"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="bio">About me</label></td>
+                    <td><textarea id="bio" name="bio"></textarea></td>
+                </tr>
+                    </table>
+                    <br>
+                    <input class="btn" type="submit" value="Save changes">
+                </form>
+            </div>
+
+            <div class="card form-box">
+                <h2>Delete Account</h2>
+                <p class="gray">This will permanently remove your account and data.</p>
+                <a class="btn btn-red" href="index.html">Delete my account</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally 
+    </div>
+
+</body>
+
+</html>
