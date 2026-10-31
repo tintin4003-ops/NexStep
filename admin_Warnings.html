@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Warnings - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+  
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="admin_Dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="admin_Dashboard.html">Dashboard</a>
+            <a class="link" href="admin_Users.html">Manage Users</a>
+            <a class="link" href="admin_Posts.html">Manage Posts</a>
+            <a class="link current" href="admin_Warnings.html">Issue Warnings</a>
+            <a class="link" href="admin_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+  
+    <div class="main">
+        <div class="container">
+
+            <div class="page-title">
+                <h1>Issue Warnings</h1>
+                
+            </div>
+
+            <div class="card left">
+                <h2>Warnings sent</h2>
+                <p><b>Anika Rahman</b> <span class="gray small">- 21 Oct 2026</span><br>
+                Please keep your posts on-topic. <a class="btn btn-red btn-small" href="#">Remove</a></p>
+                <p><b>Nusrat Jahan</b> <span class="gray small">- 19 Oct 2026</span><br>
+                Inappropriate language in a message. <a class="btn btn-red btn-small" href="#">Remove</a></p>
+            </div>
+
+            <div class="card right">
+                <h2>New warning</h2>
+                <form action="admin_Warnings.html" method="get">
+
+                    <label for="user">User:</label><br>
+                    <select id="user" name="user" required>
+                        <option value="">Select user...</option>
+                        <option>Anika Rahman</option>
+                        <option>Rafiq Hasan</option>
+                        <option>Nusrat Jahan</option>
+                        <option>Dr. Farhan Kabir</option>
+                    </select><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required></textarea><br><br>
+
+                    <input class="btn btn-full" type="submit" value="Send warning">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally 
+    </div>
+
+</body>
+
+</html>
