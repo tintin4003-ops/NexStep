@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="student_Dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="student_Dashboard.html">Dashboard</a>
+            <a class="link current" href="student_Browse.html">Browse</a>
+            <a class="link" href="student_People.html">People</a>
+            <a class="link" href="student_Registrations.html">My Registrations</a>
+            <a class="link" href="student_Connections.html">Connections</a>
+            <a class="link" href="student_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+
+            <div class="card form-box">
+                <h1>Share a Skill or Study Post</h1>
+                <form action="#" method="get"> 
+                    <table class="table">
+                        <tr>
+                            <td class="labelC"><label for="title">Title<span class="red">*</span></label></td>
+                            <td><input type="text" id="title" name="title" required></td>
+                        </tr>
+                        <tr>
+                            <td class="labelC"><label for="category">Category</label></td>
+                            <td><input type="text" id="category" name="category" placeholder="e.g. Web Development"></td>
+                        </tr>
+                        <tr>
+                            <td class="labelC"><label for="body">Description<span class="red">*</span></label></td>
+                            <td><textarea id="body" name="body" required></textarea></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input class="btn" type="submit" value="Publish">
+                    <a class="btn btn-outline" href="student_Browse.html">Cancel</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally
+    </div>
+
+</body>
+
+</html>
