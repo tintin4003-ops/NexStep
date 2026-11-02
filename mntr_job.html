@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend / Announce Internship or Job - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="mntr_dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="mntr_dashboard.html">Dashboard</a>
+            <a class="link" href="mntr_workshop.html">Host Workshop</a>
+            <a class="link" href="mntr_material.html">Upload Material</a>
+            <a class="link current" href="mntr_job.html">Internship/Job</a>
+            <a class="link" href="mntr_tip.html">Career Tips</a>
+            <a class="link" href="mntr_MyPosts.html">My Post</a>
+            <a class="link" href="mntr_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+
+            <div class="card form-box">
+                <h1>Recommend / Announce Internship or Job</h1>
+                <form action="#" method="get"> 
+                    <table class="table">
+                <tr>
+                    <td class="labelC"><label for="title">Title<span class="red">*</span></label></td>
+                    <td><input type="text" id="title" name="title" required></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="body">Description<span class="red">*</span></label></td>
+                    <td><textarea id="body" name="body"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="company">Company</label></td>
+                    <td><input type="text" id="company" name="company"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="link">Application link</label></td>
+                    <td><input type="url" id="link" name="link" placeholder="https://"></td>
+                </tr>
+                    </table>
+                    <br>
+                    <input class="btn" type="submit" value="Publish">
+                    <a class="btn btn-outline" href="mntr_dashboard.html">Cancel</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally 
+    </div>
+
+</body>
+
+</html>
