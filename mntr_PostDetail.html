@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="mntr_dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="mntr_dashboard.html">Dashboard</a>
+            <a class="link" href="mntr_workshop.html">Host Workshop</a>
+            <a class="link" href="mntr_material.html">Upload Material</a>
+            <a class="link" href="mntr_job.html">Internship/Job</a>
+            <a class="link" href="mntr_tip.html">Career Tips</a>
+            <a class="link current" href="mntr_MyPosts.html">My Posts</a>
+            <a class="link" href="mntr_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+
+            <p><a href="mntr_MyPosts.html">&larr; Back to my posts</a></p>
+
+            <div class="card left">
+                <span class="tag tag-orange">Workshop</span>
+                <h1>Build Your First PHP + MySQL App</h1>
+                <p class="gray small">Posted by you on 20 Oct 2026</p>
+                <p>A hands-on two-hour workshop. We will build a small CRUD app together. Please bring a laptop with XAMPP installed.</p>
+            </div>
+
+            <div class="card right">
+                <p>
+                    <b>Date:</b> 8 Nov 2026, 10:00 AM<br>
+                    <b>Place:</b> Online (Google Meet)<br>
+                    <b>Seats:</b> 12 of 30 taken
+                </p>
+                <a class="btn btn-full" href="mntr_workshop.html">Edit post</a>
+                <br>
+                <a class="btn btn-red btn-full" href="#">Delete post</a>
+            </div>
+
+            <!-- only workshops and seminars have registrations -->
+            <h2>Registered students</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Student</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Rafiq Hasan</td>
+                    <td><span class="tag tag-yellow">Pending</span></td>
+                    <td><a class="btn btn-small" href="#">Approve</a> <a class="btn btn-red btn-small" href="#">Reject</a></td>
+                </tr>
+                <tr>
+                    <td>Nusrat Jahan</td>
+                    <td><span class="tag tag-yellow">Pending</span></td>
+                    <td><a class="btn btn-small" href="#">Approve</a> <a class="btn btn-red btn-small" href="#">Reject</a></td>
+                </tr>
+                <tr>
+                    <td>Anika Rahman</td>
+                    <td><span class="tag tag-green">Approved</span></td>
+                    <td><a class="btn btn-red btn-small" href="#">Reject</a></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally
+    </div>
+
+</body>
+
+</html>

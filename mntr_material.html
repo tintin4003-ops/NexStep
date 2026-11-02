@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Learning Material - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+   
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="mntr_dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="mntr_dashboard.html">Dashboard</a>
+            <a class="link" href="mntr_workshop.html">Host Workshop</a>
+            <a class="link current" href="mntr_material.html">Upload Material</a>
+            <a class="link" href="mntr_job.html">Internship/Job</a>
+            <a class="link" href="mntr_tip.html">Career Tips</a>
+            <a class="link" href="mntr_MyPosts.html">My Post</a>
+            <a class="link" href="mntr_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="container">
+
+            <div class="card form-box">
+                <h1>Upload Learning Material</h1>
+                <form action="#" method="get"> 
+                    <table class="table">
+                <tr>
+                    <td class="labelC"><label for="title">Title<span class="red">*</span></label></td>
+                    <td><input type="text" id="title" name="title" required></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="body">Description<span class="red">*</span></label></td>
+                    <td><textarea id="body" name="body"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="file">Choose file</label><br><span class="subtext">(PDF, Word, PowerPoint or ZIP, max 5 MB)</span></td>
+                    <td><input type="file" id="file" name="file"></td>
+                </tr>
+                    </table>
+                    <br>
+                    <input class="btn" type="submit" value="Publish">
+                    <a class="btn btn-outline" href="mntr_dashboard.html">Cancel</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally 
+    </div>
+
+</body>
+
+</html>
