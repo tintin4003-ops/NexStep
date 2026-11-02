@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registrations - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="org_Dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="org_Dashboard.html">Dashboard</a>
+            <a class="link" href="org_VolunteerForm.html">Post Volunteer</a>
+            <a class="link " href="org_ManageEvents.html">Manage Events</a>
+            <a class="link" href="org_StudentList.html">Student Profiles</a>
+            <a class="link" href="org_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+
+            <p><a href="org_ManageEvents.html">&larr; Back to manage events</a></p>
+
+            <div class="card left">
+                <span class="tag tag-orange">Volunteer</span>
+                <h1>Tree Plantation Drive</h1>
+                <p>Plant 500 saplings along the lake. Gloves, water and lunch are provided. No experience needed, just bring energy!</p>
+            </div>
+
+            <div class="card right">
+                <p>
+                    <b>Date:</b> 12 Nov 2026, 10:00 AM<br>
+                    <b>Place:</b> Hatirjheel, Dhaka<br>
+                    <b>Seats:</b> 3 of 40 taken
+                </p>
+                <a class="btn btn-full" href="org_VolunteerForm.html">Edit event</a>
+                <br>
+                <a class="btn btn-red btn-full" href="#">Delete event</a>
+            </div>
+
+            <h2>Registered students</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Student</th>
+                    <th>Message</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><a href="org_UserProfile.html">Anika Rahman</a></td>
+                    <td class="gray small">Happy to help!</td>
+                    <td><span class="tag tag-green">Approved</span></td>
+                    <td><a class="btn btn-red btn-small" href="#">Reject</a></td>
+                </tr>
+                <tr>
+                    <td><a href="org_UserProfile.html">Nusrat Jahan</a></td>
+                    <td class="gray small">Public health student</td>
+                    <td><span class="tag tag-yellow">Pending</span></td>
+                    <td><a class="btn btn-small" href="#">Approve</a> <a class="btn btn-red btn-small" href="#">Reject</a></td>
+                </tr>
+                <tr>
+                    <td><a href="org_UserProfile.html">Rafiq Hasan</a></td>
+                    <td class="gray small"></td>
+                    <td><span class="tag tag-red">Rejected</span></td>
+                    <td><a class="btn btn-small" href="#">Approve</a></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Volunteer Opportunity - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+ 
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="org_Dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="org_Dashboard.html">Dashboard</a>
+            <a class="link current" href="org_VolunteerForm.html">Post Volunteer</a>
+            <a class="link" href="org_ManageEvents.html">Manage Events</a>
+            <a class="link" href="org_StudentList.html">Student Profiles</a>
+            <a class="link" href="org_Profile.html">Profile</a>
+            <a class="link" href="index.html">Logout</a>
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <div class="container">
+
+            <div class="card form-box">
+                <h1>Post a Volunteer Opportunity / Event</h1>
+                <form action="#" method="get"> 
+                    <table class="table">
+                <tr>
+                    <td class="labelC"><label for="type">Type</label></td>
+                    <td><select id="type" name="type"><option>Volunteer Opportunity</option><option>Event</option><option>Seminar</option></select></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="title">Title<span class="red">*</span></label></td>
+                    <td><input type="text" id="title" name="title" required></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="body">Description<span class="red">*</span></label></td>
+                    <td><textarea id="body" name="body"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="date">Date and time<span class="red">*</span></label></td>
+                    <td><input type="datetime-local" id="date" name="date" required></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="seats">Number of seats</label><br><span class="subtext">(leave empty for no limit)</span></td>
+                    <td><input type="number" id="seats" name="seats" min="1"></td>
+                </tr>
+                <tr>
+                    <td class="labelC"><label for="location">Location</label></td>
+                    <td><input type="text" id="location" name="location"></td>
+                </tr>
+                    </table>
+                    <br>
+                    <input class="btn" type="submit" value="Publish">
+                    <a class="btn btn-outline" href="org_manageEvents.html">Cancel</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally 
+    </div>
+
+</body>
+
+</html>
