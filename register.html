@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - NexStep</title>
     <link rel="stylesheet" href="css/style.css">
+       <script src="js/password.js"></script>
+       <script src="js/register.js"></script>
     
 </head>
 
@@ -27,30 +29,44 @@
 
             <div class="card form-box">
                 <h1>User Registration</h1>
-                <form action="login.html" method="get">
+                <form action="#" method="get" novalidate onsubmit="return validateRegister()">
 
                     <label>I am a:</label><br>
                     <input type="radio" id="student" name="usertype" value="student" checked>
+
                     <label for="student" class="line">Student</label>
                     <input type="radio" id="org" name="usertype" value="org">
+
                     <label for="org" class="line">NGO / Organization</label>
                     <input type="radio" id="mentor" name="usertype" value="mentor">
-                    <label for="mentor" class="line">Alumni / Mentor</label><br><br>
 
-                    <label for="name">Full name / Organization name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="mentor" class="line">Alumni / Mentor</label>
+                    <br><br>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="name">Full name / Organization name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
 
-                    <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password" minlength="6" required><br>
-                    <span class="subtext">At least 6 characters.</span><br><br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
 
-                    <label for="password2">Confirm password:</label><br>
-                    <input type="password" id="password2" name="password2" required><br><br>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="password" id="password" name="password" minlength="6" required>
+                    <br>
+                    <span class="subtext">At least 8 characters with a capital letter, a small letter, a number and a special character.</span>
+                    <br><br>
 
+                    <label for="password2">Confirm password:</label>
+                    <br>
+                    <input type="password" id="password2" name="password2" required>
+                    <br><br>
+                    <p id="error" class="red"></p>
                     <input class="btn btn-full" type="submit" value="Register">
+                       
                 </form>
             </div>
 

@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile - NexStep</title>
+    <title>
+        My Profile - NexStep
+    </title>
     <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/admin.css">
+       <script src="js/password.js"></script>
   
 </head>
 
@@ -13,7 +17,9 @@
 
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="admin_Dashboard.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="logo" href="admin_Dashboard.html">
+                <span class="logo-box">N</span>NexStep
+            </a>
             <a class="link" href="admin_Dashboard.html">Dashboard</a>
             <a class="link" href="admin_Users.html">Manage Users</a>
             <a class="link " href="admin_Posts.html">Manage Posts</a>
@@ -27,26 +33,42 @@
         <div class="container">
 
             <div class="page-title">
-                <h1>My Profile</h1>
-                <a class="btn btn-outline" href="admin_CngPass.html">Change Password</a>
+                <h1>
+                    My Profile
+                </h1>
+                   <a class="btn btn-outline" href="#" onclick="return sendPasswordLink()">Change Password</a>
             </div>
 
             <div class="card form-box">
-                <h2>View / Edit Profile</h2>
+                <h2>
+                    View / Edit Profile
+                </h2>
                 <form action="#" method="get">
                     <table class="table">
                 <tr>
-                    <td class="labelC"><label for="name">Full name</label></td>
-                    <td><input type="text" id="name" name="name" value="Anika Hossain Raisa"></td>
+                    <td class="labelC">
+                        <label for="name">Full name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" value="Anika Hossain Raisa">
+                    </td>
                 </tr>
                 <tr>
-                    <td class="labelC"><label for="email">Email</label></td>
-                    <td><input type="email" id="email" name="email" value="@nexstep.com"></td>
+                    <td class="labelC">
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" value="@nexstep.com">
+                    </td>
                 </tr>
                
                 <tr>
-                    <td class="labelC"><label for="loc">Location</label></td>
-                    <td><input type="text" id="loc" name="loc" value="Dhaka, Bangladesh"></td>
+                    <td class="labelC">
+                        <label for="loc">Location</label>
+                    </td>
+                    <td>
+                        <input type="text" id="loc" name="loc" value="Dhaka, Bangladesh">
+                    </td>
                 </tr>
                
                

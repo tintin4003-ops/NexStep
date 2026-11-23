@@ -1,0 +1,15 @@
+:root {
+    --green: #0f766e;
+    --dark-green: #0b5a54;
+    --light-green: #dff3f0;
+}
+
+
+.alert-warning {
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    color: #7c2d12;
+    background-color: var(--light-red);
+    border: 1px solid #f1c4ad;
+    border-radius: 10px;
+}
