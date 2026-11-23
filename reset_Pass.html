@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Password - NexStep</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/password.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html"><span class="logo-box">N</span>NexStep</a>
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="login.html">Login</a>
+            <a class="link" href="register.html">Register</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+
+            
+            <div class="card form-box">
+                <h1>Set a New Password</h1>
+                <p class="gray">Write your new password two times.</p>
+                <form action="login.html" method="get" novalidate onsubmit="return validateResetPassword()">
+
+                    <label for="new">New password:</label>
+                    <br>
+                    <input type="password" id="new" name="new" required>
+                    <br>
+                    <span class="subtext">At least 8 characters with a capital letter, a small letter, a number and a special character.</span>
+                    <br><br>
+
+                    <label for="new2">Confirm new password:</label>
+                    <br>
+                    <input type="password" id="new2" name="new2" required>
+                    <br><br>
+
+                    <p id="error" class="red"></p>
+                    <input class="btn btn-full" type="submit" value="Save new password">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        NexStep - Connecting Students with Skills, Mentors and Opportunities Globally
+    </div>
+
+</body>
+
+</html>

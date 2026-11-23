@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile - NexStep</title>
     <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/student.css">
+       <script src="js/password.js"></script>
   
 </head>
 
@@ -30,7 +32,7 @@
 
             <div class="page-title">
                 <h1>My Profile</h1>
-                <a class="btn btn-outline" href="student_CngPass.html">Change Password</a>
+                <a class="btn btn-outline" href="#" onclick="return sendPasswordLink()">Change Password</a>
             </div>
 
             <div class="card form-box">
@@ -39,31 +41,56 @@
                     <table class="table">
                 <tr>
                     <td class="labelC"><label for="name">Full name</label></td>
-                    <td><input type="text" id="name" name="name" value="Mahi Muqtadir"></td>
+                    <td>
+                        <input type="text" id="name" name="name" value="Mahi Muqtadir">
+                    </td>
                 </tr>
                 <tr>
-                    <td class="labelC"><label for="email">Email</label></td>
-                    <td><input type="email" id="email" name="email" value="student1@nexstep.com"></td>
+                    <td class="labelC">
+                        <label for="email">Email</label>
+                    </td>
+
+                    <td>
+                        <input type="email" id="email" name="email" value="student1@nexstep.com">
+                    </td>
                 </tr>
                 <tr>
-                    <td class="labelC"><label for="univ">University / Organization</label></td>
-                    <td><input type="text" id="univ" name="univ" value="AIUB"></td>
+                    <td class="labelC">
+                        <label for="univ">University / Organization</label>
+                    </td>
+                    <td>
+                        <input type="text" id="univ" name="univ" value="AIUB">
+                    </td>
                 </tr>
                 <tr>
                     <td class="labelC"><label for="loc">Location</label></td>
-                    <td><input type="text" id="loc" name="loc" value="Dhaka, Bangladesh"></td>
+                    <td>
+                        <input type="text" id="loc" name="loc" value="Dhaka, Bangladesh">
+                    </td>
                 </tr>
                 <tr>
-                    <td class="labelC"><label for="skills">Skills</label></td>
-                    <td><input type="text" id="skills" name="skills" value="PHP, JavaScript, MySQL"></td>
+                    <td class="labelC">
+                        <label for="skills">Skills</label>
+                    </td>
+                    <td>
+                        <input type="text" id="skills" name="skills" value="PHP, JavaScript, MySQL">
+                    </td>
                 </tr>
                 <tr>
-                    <td class="labelC"><label for="web">Website / LinkedIn</label></td>
-                    <td><input type="url" id="web" name="web" placeholder="https://"></td>
+                    <td class="labelC">
+                        <label for="web">Website / LinkedIn</label>
+                    </td>
+                    <td>
+                        <input type="url" id="web" name="web" placeholder="https://">
+                    </td>
                 </tr>
                 <tr>
-                    <td class="labelC"><label for="bio">About me</label></td>
-                    <td><textarea id="bio" name="bio">Third-year CSE student who loves building web apps.</textarea></td>
+                    <td class="labelC">
+                        <label for="bio">About me</label>
+                    </td>
+                    <td>
+                        <textarea id="bio" name="bio">Third-year CSE student who loves building web apps.</textarea>
+                    </td>
                 </tr>
                     </table>
                     <br>

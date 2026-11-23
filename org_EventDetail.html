@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registrations - NexStep</title>
     <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/org.css">
+       <script src="js/org.js"></script>
 </head>
 
 <body>
@@ -39,9 +41,9 @@
                     <b>Place:</b> Hatirjheel, Dhaka<br>
                     <b>Seats:</b> 3 of 40 taken
                 </p>
-                <a class="btn btn-full" href="org_VolunteerForm.html">Edit event</a>
-                <br>
-                <a class="btn btn-red btn-full" href="#">Delete event</a>
+                 <a class="btn btn-full" href="org_VolunteerForm.html">Edit event</a>
+                    <br>
+                 <a class="btn btn-red btn-full" href="#" onclick="return confirmDelete('event')">Delete event</a>
             </div>
 
             <h2>Registered students</h2>
@@ -55,20 +57,20 @@
                 <tr>
                     <td><a href="org_UserProfile.html">Anika Rahman</a></td>
                     <td class="gray small">Happy to help!</td>
-                    <td><span class="tag tag-green">Approved</span></td>
-                    <td><a class="btn btn-red btn-small" href="#">Reject</a></td>
+                       <td id="status1"><span class="tag tag-green">Approved</span></td>
+                       <td><a class="btn btn-red btn-small" href="#" onclick="setStatus('status1', 'Rejected'); return false;">Reject</a></td>
                 </tr>
                 <tr>
                     <td><a href="org_UserProfile.html">Nusrat Jahan</a></td>
                     <td class="gray small">Public health student</td>
-                    <td><span class="tag tag-yellow">Pending</span></td>
-                    <td><a class="btn btn-small" href="#">Approve</a> <a class="btn btn-red btn-small" href="#">Reject</a></td>
+                       <td id="status2"><span class="tag tag-yellow">Pending</span></td>
+                       <td><a class="btn btn-small" href="#" onclick="setStatus('status2', 'Approved'); return false;">Approve</a> <a class="btn btn-red btn-small" href="#" onclick="setStatus('status2', 'Rejected'); return false;">Reject</a></td>
                 </tr>
                 <tr>
                     <td><a href="org_UserProfile.html">Rafiq Hasan</a></td>
                     <td class="gray small"></td>
-                    <td><span class="tag tag-red">Rejected</span></td>
-                    <td><a class="btn btn-small" href="#">Approve</a></td>
+                       <td id="status3"><span class="tag tag-red">Rejected</span></td>
+                       <td><a class="btn btn-small" href="#" onclick="setStatus('status3', 'Approved'); return false;">Approve</a></td>
                 </tr>
             </table>
 
